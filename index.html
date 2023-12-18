@@ -44,12 +44,13 @@
       href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&amp;display=swap"
       rel="stylesheet"
     />
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
     <!-- Core theme CSS (includes Bootstrap)-->
     <link href="css/styles.css" rel="stylesheet" />
   </head>
   <body>
     <!-- Background Video-->
-    <video
+    <!-- <video
       class="bg-video"
       playsinline="playsinline"
       autoplay="autoplay"
@@ -57,7 +58,12 @@
       loop="loop"
     >
       <source src="assets/mp4/bg2.mp4" type="video/mp4" />
-    </video>
+    </video> -->
+    <div class="bg-video">
+      <div id="particles-js" style="height: 100vh; width: 100vw"></div>
+      <script src="./js/particles-config.js"></script>
+    </div>
+
     <!-- Masthead-->
     <div class="masthead">
       <div class="masthead-content text-white">
@@ -72,26 +78,29 @@
           <p class="">Ghost Secure Tunnel VPN.</p>
           <p class="mb-5">Redefining privacy on the web.</p>
           <p class="">Coming Q1 2024</p>
+          <p></p>
         </div>
       </div>
     </div>
     <!-- Social Icons-->
     <!-- For more icon options, visit https://fontawesome.com/icons?d=gallery&p=2&s=brands-->
     <div class="social-icons">
-      <div
-        class="d-flex flex-row flex-lg-column justify-content-center align-items-end h-100 mt-3 mt-lg-0 fixed-bottom"
-      >
-        <a class="btn btn-dark m-3" href="https://twitter.com/GSTVPNofficial"
-          ><i class="fa fa-twitter"></i
-        ></a>
-        <a
-          class="btn btn-dark m-3"
-          href="https://matrix.to/#/#gstvpn:matrix.org"
-          ><i class="fa fa-matrix-org"></i
-        ></a>
-        <a class="btn btn-dark m-3" href="https://t.me/gstvpn"
-          ><i class="fa fa-telegram"></i
-        ></a>
+      <div class="d-flex flex-row justify-content-center h-100 mt-3 mt-lg-0">
+        <div class="fixy">
+          <a
+            class="btn btn-dark m-3 new-bg"
+            href="https://twitter.com/GSTVPNofficial"
+            ><i class="fa fa-twitter"></i
+          ></a>
+          <a
+            class="btn btn-dark m-3 new-bg"
+            href="https://matrix.to/#/#gstvpn:matrix.org"
+            ><i class="fa fa-matrix-org"></i
+          ></a>
+          <a class="btn btn-dark m-3 new-bg" href="https://t.me/gstvpn"
+            ><i class="fa fa-telegram"></i
+          ></a>
+        </div>
       </div>
     </div>
     <!-- Bootstrap core JS-->

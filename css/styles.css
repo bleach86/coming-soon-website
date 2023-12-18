@@ -10842,10 +10842,10 @@ body:before {
   width: 100%;
   /* background-color: #2a5555; */
   opacity: 0.7;
-  z-index: 1;
+
 }
 
-video.bg-video {
+.bg-video {
   position: fixed;
   top: 50%;
   left: 50%;
@@ -10854,16 +10854,22 @@ video.bg-video {
   width: auto;
   height: auto;
   transform: translateX(-50%) translateY(-50%);
-  z-index: 0;
+  z-index: 3;
+}
+
+.fixy {
+  position: fixed;
+  bottom: 0;
+}
+
+body {
+  background: url("../assets/img/worldwide-coverage-grey.png") #171a1a no-repeat center center scroll;
+  background-size: contain;
 }
 
 @media (pointer: coarse) and (hover: none) {
   body {
-    background: url("../assets/img/GSTVPN-Hellerick_triaxial_boreal_projection.jpg") #171a1a no-repeat center center scroll;
     background-size: cover;
-  }
-  body video {
-    display: none;
   }
 }
 .masthead {
@@ -10883,7 +10889,7 @@ video.bg-video {
   left: 0;
   height: 100%;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.85);
+  background-color: rgba(0, 0, 0, 0.45);
 }
 .masthead .masthead-content {
   position: relative;
@@ -10945,16 +10951,22 @@ video.bg-video {
 }
 .social-icons {
   position: relative;
-  z-index: 2;
+  z-index: 3;
 }
 .social-icons .btn {
   display: inline-flex;
   align-items: center;
   justify-content: center;
   padding: 0;
-  height: 4rem;
-  width: 4rem;
+  height: 4.5rem;
+  width: 4.5rem;
   border-radius: 100rem;
+}
+
+
+.new-bg.btn-dark {
+  --bs-btn-bg: rgba(0, 0, 0, 0.45);
+  --bs-btn-border-color:rgba(0, 0, 0, 0.45);
 }
 
 @media (min-width: 992px) {
@@ -10962,9 +10974,13 @@ video.bg-video {
     position: absolute;
     height: 100%;
     top: 0;
-    right: 2.5rem;
+    right: 3rem;
     width: auto;
   }
+    .fixy {
+      position: fixed;
+      bottom: 35%;
+    }
 }
 
 .logo {
