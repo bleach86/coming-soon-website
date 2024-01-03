@@ -45,8 +45,10 @@
       rel="stylesheet"
     />
     <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script src="js/flipdown.js"></script>
     <!-- Core theme CSS (includes Bootstrap)-->
     <link href="css/styles.css" rel="stylesheet" />
+    <link href="css/flipdown.css" rel="stylesheet" />
   </head>
   <body>
     <!-- Background Video-->
@@ -75,9 +77,13 @@
               alt="GSTVPN"
             />
           </h1>
-          <p class="">Ghost Secure Tunnel VPN.</p>
-          <p class="mb-5">Redefining privacy on the web.</p>
-          <p class="">Coming Q1 2024</p>
+          <p class="gst-message">Ghost Secure Tunnel VPN.</p>
+          <p class="mb-5 gst-message">Redefining privacy on the web.</p>
+          <div class="container">
+            <div class="gst-flipdown">
+              <div id="flipdown" class="flipdown"></div>
+            </div>
+          </div>
           <p></p>
         </div>
       </div>
